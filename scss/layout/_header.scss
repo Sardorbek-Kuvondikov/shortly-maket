@@ -1,0 +1,133 @@
+.unscrole {
+  overflow: hidden;
+}
+.open-btn .navbar {
+  display: block;
+}
+.site-header {
+  background-color: $main-white-color;
+}
+.site-header__inner {
+  @include center-box;
+  padding-block: 40px;
+  margin: 0;
+}
+.site-header__menu-btn {
+  width: 24px;
+  height: 21px;
+  background-image: url("../../images/menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+}
+.navbar {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  min-width: 232px;
+  // max-width: 327px;
+  width: 85%;
+  margin: auto;
+  background-color: $main-secondary-color;
+  border-radius: 8px;
+  padding-block: 40px;
+  padding-inline: 24px;
+  z-index: 100;
+  display: none;
+}
+.navbar__links {
+  padding-left: 0;
+}
+.navbar__item {
+  margin-bottom: 30px;
+  list-style: none;
+  text-align: center;
+}
+.navbar__link {
+  text-decoration: none;
+  color: $main-white-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.navbar__login {
+  text-decoration: none;
+  color: $main-white-color;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.navbar__signup {
+  width: 100%;
+  max-width: 279px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  background-color: $main-light-green-color;
+  border: none;
+  color: $main-white-color;
+  border-radius: 25px;
+}
+.navbar__line {
+  opacity: 20%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-inline: 20px;
+  }
+  .site-header__menu-btn {
+    display: none;
+  }
+  .logi__img {
+    margin-right: 45px;
+  }
+  .navbar {
+    position: static;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    margin-top: 0;
+  }
+  .navbar__links {
+    @include center-box;
+    column-gap: 29px;
+    margin: 0;
+  }
+  .navbar__link {
+    color: $main-fourth-color;
+    transition: all 0.4s ease;
+    &:hover {
+      cursor: pointer;
+      color: $main-first-color;
+    }
+  }
+  .navbar__item {
+    margin-bottom: 0;
+  }
+  .navbar__login {
+    color: $main-fourth-color;
+    margin: 0;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $main-first-color;
+    }
+  }
+  .navbar__signup {
+    max-width: 105px;
+    margin: 0;
+    transition: all 0.4s ease;
+    &:hover {
+      cursor: pointer;
+      background-color: $main-hover-btn;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@mixin center-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin button-hover {
+  cursor: pointer;
+  background-color: $main-hover-btn;
+}

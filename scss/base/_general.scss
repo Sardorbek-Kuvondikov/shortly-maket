@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $main-bg-color;
+  font-family: $poppins-medium;
+}
+img {
+  display: block;
+}
+.site-header__inner {
+  margin-block: 40px;
+}

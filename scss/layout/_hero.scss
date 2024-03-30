@@ -210,13 +210,13 @@
 .links__btn {
   padding-block: 8px;
   border: none;
-  padding-inline: 31px;
+  padding-inline: 25px;
   border-radius: 25px;
   width: 100%;
   max-width: 197px;
   display: block;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 30px;
   background-color: $main-light-green-color;
@@ -281,16 +281,17 @@
   }
   .links__inner {
     margin-top: 420px;
-    height: 250px;
+    height: 450px;
+    z-index: 1;
   }
   .links__title {
     font-size: 26px;
-    line-height: 48px;
+    line-height: 480px;
   }
   .links__btn {
     padding-block: 12px;
     padding-inline: 40px;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 30px;
   }
 }

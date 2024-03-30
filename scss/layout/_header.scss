@@ -14,11 +14,10 @@
 }
 .site-header__menu-btn {
   width: 24px;
-  height: 21px;
+  height: 51px;
+  padding-block: 12px;
   background-image: url("../../images/menu.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
   background-color: transparent;
   border: none;
 }
